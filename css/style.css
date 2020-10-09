@@ -44,6 +44,11 @@ header {
   border-bottom: #479761 3px solid;
 }
 
+#logo img {
+  width: 150px;
+  float: left;
+}
+
 header a {
   color: #b19f9e;
   text-decoration: none;
@@ -62,12 +67,13 @@ header #branding {
 }
 
 header #branding h1 {
-  margin: 0;
+  margin-top: 50px;
+  margin-left: 10px;
 }
 
 header nav {
   float: right;
-  margin-top: 5px;
+  margin-top: -30px;
 }
 
 header .highlight,
@@ -84,10 +90,10 @@ header a:hover {
 /* SHOWCASE */
 #showcase {
   min-height: 400px;
-  background: url('../img/flowers1.jpg') no-repeat 0 -400px;
+  background: url('../img/Vancouver1.jpg') no-repeat 0 -400px;
   text-align: center;
   width: 100%;
-  color: #b19f9e;
+  color: #cebc81;
 }
 
 #showcase h1 {
@@ -98,6 +104,7 @@ header a:hover {
 
 #showcase p {
   font-size: 20px;
+  color: #cebc81;
 }
 
 /* DISCORD */
