@@ -18,22 +18,54 @@
 6.  Begin making webpages/code on VSCode (HTML, CSS, JavaScript ......)
     | Don't forget to save your work?
 
-7.  In your terminal:    git status    [press enter] (This will show the files that have been added or modified)
+7.  Terminal:     git status    [press enter] (This will show the files that have been added or modified)
 
-8.  In your terminal:    git add .     [press enter] (This will prepare the files that you want to upload to Github)
-    | In your terminal:  git status    [press enter] (This will show all the staged files/changes ready to send)
+8.  Terminal:     git add .     [press enter] (This will prepare the files that you want to upload to Github)
+    | Terminal:   git status    [press enter] (This will show all the staged files/changes ready to send)
 
-9.  In your terminal:    git commit -m "message goes here"    [press enter]
+9.  Terminal:     git commit -m "message goes here"    [press enter]
 
 10.  Go to Github website and click on your repository and choose the clone button.
     | copy the web address
 
-11.  In your terminal:    git remote add origin (paste web address here without the brackets) [press enter]
+11.  Terminal:    git remote add origin (paste web address here without the brackets) [press enter]
+    |example =>   git remote add origin https://github.com/McHylander/hayleymcleodphotography.git
 
-12.  In your terminal:    git push -u origin main [press enter]   (This will push all your local files to github.)
+12.  Terminal:    git push -u origin main (master) [press enter]   (This will push all your local files to github.)
+    | Note:  Github projects main repository used to be called master.  Because of events in the USA (BLM) it was deemed that master was not an appropriate term to use. So, when working on older projects be sure when uploading to github that you use;
+    git push (or pull) -u origin main or master depending on the github file setup.
 
-13.  Go to Github website where your repository is and refresh the webpage.  You should see all files you created from your local machine.
+13.  Go to Github website where your repository is and refresh the webpage.  You should see all files you created from your local machine (laptop/desktop).
 
+
+
+====== WORKING WITH GITHUB AND LOCAL PROJECT ======
+
+1.  Open VSCode and open the folder of the project that your are working on through VSCode.
+2.  Begin writing code to your project and save (save often).
+3.  Open terminal through VSCode.
+4.  Make sure terminal is directed to the folder/project that your are currently working on.
+5.  Terminal:   git status
+6.  Terminal:   git add .
+7.  Terminal:   git status
+8.  Terminal:   git commit -m "Message goes here"
+9.  Terminal:   git push        
+    | (Note:  Since we did git push -u remote origin main once on this project we only have to use git push command from now on.  If we create a new branch then we would have to git push -u remote origin branchname but again just the first time.  Afterwards it would be just git push.)
+
+
+====== BRANCHING =====
+
+1.  Branching is like a side job that you work on for the main project.  You work with the main project code without affecting the main project.  It is like testing before implementing to the final project.
+2.  To create a new branch:  Open VSCode to your project and open terminal.
+    | Terminal: git status
+    | Terminal: git checkout -b branchname
+        | example =>    git checkout -b tips_tricks
+    | Terminal: git branch (this will show you what your current branch is)
+    | Terminal: git checkout main (This will switch you back to the main (master) branch)
+3.  If you already have a branch that you have used before:
+    | Terminal: git checkout branchname
+        | example =>    git checkout tips_tricks
+    | Terminal: git branch (to confirm which working branch you are currenly on)
 
 
 ====== ADDING A COLLABORATOR(S) ======
