@@ -1,0 +1,47 @@
+====== CREATING YOUR OWN REPOSITORY ======
+
+1.  Go to https://github.com
+2.  Click New 
+    | Type a respository name and checkbox Add a README file 
+    | Click Create Repository.
+
+3.  Go to your desktop folder on computer
+    | Create a folder and give it a name.
+
+4.  Open VSCode and and click the File drop down menu and choose open folder.
+    | Open the folder you just created on your desktop.
+
+5.  Click on Terminal drop down menu and choose New Terminal.
+    | If not already, cd into the working folder, direct the terminal to the current folder that you opened up with VSCode
+    | Type in your terminal:   git init    [press enter] (This will create a .git folder which will be used to communicate your local files and github)
+
+6.  Begin making webpages/code on VSCode (HTML, CSS, JavaScript ......)
+    | Don't forget to save your work?
+
+7.  In your terminal:    git status    [press enter] (This will show the files that have been added or modified)
+
+8.  In your terminal:    git add .     [press enter] (This will prepare the files that you want to upload to Github)
+    | In your terminal:  git status    [press enter] (This will show all the staged files/changes ready to send)
+
+9.  In your terminal:    git commit -m "message goes here"    [press enter]
+
+10.  Go to Github website and click on your repository and choose the clone button.
+    | copy the web address
+
+11.  In your terminal:    git remote add origin (paste web address here without the brackets) [press enter]
+
+12.  In your terminal:    git push -u origin main [press enter]   (This will push all your local files to github.)
+
+13.  Go to Github website where your repository is and refresh the webpage.  You should see all files you created from your local machine.
+
+
+
+====== ADDING A COLLABORATOR(S) ======
+
+1.  Go to Github website and choose the repository you want to collaborate with.
+
+2.  Click on Settings.
+    | From the menu on the left choose Manage Access
+    | Invite a collaborator.
+    | Type in username or email address.
+    | Wait for your invited collaborator to accept invitation.
